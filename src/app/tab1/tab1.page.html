@@ -14,15 +14,9 @@
   </ion-header>
 
   <div class="ion-padding">
-    <ion-card
-      class="bg-gray-800 p-3 border-2 border-gray-800 rounded-lg"
-    >
-      <div
-        class="grid grid-cols-5 gap-4"
-      >
-        <ion-card-header
-          class="col-span-4 text-center"
-        >
+    <ion-card class="bg-gray-800 p-3 border-2 border-gray-800 rounded-lg">
+      <div class="grid grid-cols-5 gap-4">
+        <ion-card-header class="col-span-4 text-center">
           <ion-card-subtitle>Desarrollador de Software</ion-card-subtitle>
           <ion-card-title class="pb-3">Alejo Pinzón</ion-card-title>
           <ion-label class="text-white text-justify">
@@ -30,9 +24,7 @@
             Me gusta llevar cada nuevo concepto adquirido a la práctica mediante creaciones de mini proyectos
           </ion-label>
         </ion-card-header>
-        <div
-          class="flex flex-col justify-center items-center col-span-1 "
-        >
+        <div class="flex flex-col justify-center items-center col-span-1">
           <img
             src="assets/Alejo.jpg"
             alt="Alejo Pinzón"
@@ -42,65 +34,49 @@
           >
         </div>
       </div>
-      <ion-card-content
-        class="text-center"
-      >
-        Soy un desarrollador de software, actualmente estoy cursando 5° semestre la carrera de <em>Tecnología Superior en Desarrollo de Software</em> en la <em>Escuela Politencina Nacional</em> del Ecuador.
+      <ion-card-content class="text-center">
+        Soy un desarrollador de software, actualmente estoy cursando 5° semestre la carrera de <em>Tecnología Superior en Desarrollo de Software</em> en la <em>Escuela Politecnica Nacional</em> del Ecuador.
       </ion-card-content>
     </ion-card>
   </div>
 
-  <div
-    class="grid grid-cols-1 md:grid-cols-2 gap-4 p-3"
-  >
-    <ion-card
-      class="bg-gray-800 p-3 border-2 border-gray-800 rounded-lg"
-    >
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-3">
+    <ion-card class="bg-gray-800 p-3 border-2 border-gray-800 rounded-lg">
       <ion-card-header>
         <ion-card-title>Experiencia</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <ion-list
-          class="text-center text-white border-2 border-gray-800 rounded-lg"
-        >
-          <ion-item>
+        <ion-list class="text-center text-white border-2 border-gray-800 rounded-lg">
+          <ion-item class="flex flex-col md:flex-row">
             <ion-label>Desarrollador de Software</ion-label>
             <ion-label>2021 - Actualidad</ion-label>
           </ion-item>
         </ion-list>
       </ion-card-content>
     </ion-card>
-    <ion-card
-      class="bg-gray-800 p-3 border-2 border-gray-800 rounded-lg"
-    >
+    <ion-card class="bg-gray-800 p-3 border-2 border-gray-800 rounded-lg">
       <ion-card-header>
         <ion-card-title>Estudios</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <ion-list
-          class="text-center text-white border-2 border-gray-800 rounded-lg"
-        >
-          <ion-item class="flex flex-row p-3">
-            <ion-label>Escuela Politencina Nacional</ion-label>
+        <ion-list class="text-center text-white border-2 border-gray-800 rounded-lg">
+          <ion-item class="flex flex-col md:flex-row">
+            <ion-label>Escuela Politecnica Nacional</ion-label>
             <ion-label>Tecnología Superior en Desarrollo de Software</ion-label>
           </ion-item>
-          <ion-item class="flex flex-row">
+          <ion-item class="flex flex-col md:flex-row">
             <ion-label>Unidad Educativa “Luis Felipe Borja del Alcázar”</ion-label>
             <ion-label>Bachillerato en ciencias</ion-label>
           </ion-item>
         </ion-list>
       </ion-card-content>
     </ion-card>
-    <ion-card
-      class="bg-gray-800 p-3 border-2 border-gray-800 rounded-lg col-span-full"
-    >
+    <ion-card class="bg-gray-800 p-3 border-2 border-gray-800 rounded-lg col-span-full">
       <ion-card-header>
         <ion-card-title>Skills</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <ion-list
-          class="text-white border-2 border-gray-800 rounded-lg"
-        >
+        <ion-list class="text-white border-2 border-gray-800 rounded-lg">
           <ion-item *ngFor="let skill of skills">
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 w-full">
               <ion-label class="text-center">{{ skill.name }}</ion-label>
@@ -119,21 +95,14 @@
     </ion-card>
   </div>
 
-  <div
-    class="grid grid-cols-1 md:grid-cols-2 gap-4 p-3"
-  >
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-3">
     <ion-label class="text-white text-center text-lg col-span-full">Proyectos</ion-label>
-    <ion-card
-      class="bg-gray-800 p-3 border-2 border-gray-800 rounded-lg"
-      *ngFor="let project of projects"
-    >
+    <ion-card class="bg-gray-800 p-3 border-2 border-gray-800 rounded-lg" *ngFor="let project of projects">
       <ion-card-header>
         <ion-card-title class="text-center">{{project.name}}</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <ion-list
-          class="text-white border-2 border-gray-800 rounded-lg"
-        >
+        <ion-list class="text-white border-2 border-gray-800 rounded-lg">
           <ion-item class="flex flex-row">
             <ion-label>Descripción:</ion-label>
             <ion-label>{{project.desc}}</ion-label>
@@ -151,6 +120,5 @@
         </ion-list>
       </ion-card-content>
     </ion-card>
-    
   </div>
 </ion-content>
