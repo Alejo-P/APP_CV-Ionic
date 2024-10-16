@@ -18,6 +18,7 @@ export class Tab1Page {
     { name: 'Python', progress: 0.75 }
   ];
 
+  // Lista de proyectos
   projects = [
     { name:'NodeSetup', version:'2.1', desc:'Aplicación GUI en Python para la configuración de un directorio como proyecto de Node.js', link:'https://github.com/Alejo-P/NodeSetup-APP', dateC:"2024-05-26"},
     { name:'Main App (Beta)', version:'0.0.1', desc:'Aplicación GUI de escritorio (en desarrollo) para realizar distintas acciones con conjuntos de datos, la aplicación surgió de una idea de juntar la mayor parte de contenidos vistos en la asignatura de 3° semestre Analisis de Datos de la carrera de Desarrollo de Software de la EPN, el nombre de la aplicación puede cambiar durante la fase de desarrollo', link:undefined, dateC:"2024-05-26"},
